@@ -1,0 +1,58 @@
+{
+  "theme": "Light",
+  "archetype": "1 (Organic & Earthy)",
+  "brand_name": "YIRUDA",
+  "colors": {
+    "background": "#F9F6F0",
+    "text_primary": "#0F0E0E",
+    "text_secondary": "#4A4A4A",
+    "accent_gold": "#D4AF37",
+    "accent_crimson": "#9E1B1B",
+    "accent_jade": "#00A86B",
+    "surface": "#F2EFEB",
+    "border": "#E5DFD3"
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond",
+    "body_font": "Outfit",
+    "h1": "text-5xl sm:text-6xl tracking-tighter font-light",
+    "h2": "text-3xl sm:text-4xl tracking-tight font-light",
+    "h3": "text-2xl font-light",
+    "body": "text-base leading-relaxed",
+    "label": "text-xs tracking-[0.2em] uppercase"
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-6 sm:px-12",
+    "section_padding": "py-24 sm:py-32",
+    "grid_lookbook": "grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-24 items-center",
+    "card_padding": "p-8 sm:p-12"
+  },
+  "motion_interactions": {
+    "opening_animation": "Layered SVG path-draw animations simulating Sumi-e brushstrokes painting the YIRUDA wordmark and tagline over ~4 seconds. Use framer-motion with ease: [0.25, 1, 0.5, 1]. Sequence: Background stroke -> Wordmark strokes -> Fade in email signup form.",
+    "cursor_trail": "HTML5 Canvas full-screen overlay (pointer-events: none). Track mouse moves, draw connected curves using bezier paths with fading opacity and varying stroke width (pressure simulation) to look like bleeding ink.",
+    "glitch_effect": "Every 8 seconds, the Pink Octopus image is instantly swapped to the Green Octopus image for 200ms-400ms accompanied by a swift horizontal paintbrush sweep animation overlay.",
+    "hover_states": "Buttons use border-accent_crimson or bg-text_primary with text-background. Subtle scale up on lookbook images."
+  },
+  "components": {
+    "buttons": "Flat rectangles, no rounded corners. 1px solid border (ink black or crimson). Transparent bg defaulting to ink black on hover. Uppercase, wide tracking.",
+    "inputs": "Shadcn input customized to have only a bottom border (border-b border-text_primary), no background, no ring, focus-visible outline none. Classic paper form aesthetic.",
+    "lookbook_layout": "Asymmetric editorial layout. Do not center everything. Product 1 (Octopus) spans md:col-span-7, Notify Me form md:col-span-5. Product 2 (Lotus) spans md:col-start-6 md:col-span-7, Notify form md:col-span-4. Generous negative space."
+  },
+  "media": {
+    "product_octopus_pink": "https://customer-assets.emergentagent.com/job_c71d1dcd-b604-40ef-9521-484d0c65f0fc/artifacts/mbb1up1h_OCTO%20DESIGN%20REDO.PNG",
+    "product_octopus_green": "https://customer-assets.emergentagent.com/job_c71d1dcd-b604-40ef-9521-484d0c65f0fc/artifacts/i1czc3pf_OCTO%20SECRET%20DESIGN.PNG",
+    "product_lotus_bikini": "https://customer-assets.emergentagent.com/job_c71d1dcd-b604-40ef-9521-484d0c65f0fc/artifacts/63gpczpe_IMG_2516.JPEG"
+  },
+  "instructions_to_main_agent": [
+    "Install `framer-motion` for brushstroke animations and the octopus glitch effect.",
+    "Implement the cursor ink trail using a custom Canvas component. Store previous mouse points and draw curved strokes that fade out over time.",
+    "The landing page must start with the 4-second brushstroke reveal of 'YIRUDA', and then fade in an email capture form (only storing in MongoDB, no complex auth). Use a minimalist form style.",
+    "Create a dedicated 'Drops' page routing via react-router-dom.",
+    "On the Drops page, layout the two products using an asymmetric grid. For each product, include a 'Notify me' email input.",
+    "Implement the 8-second interval glitch on the Octopus image: use a setInterval or framer-motion useAnimation to briefly swap the image source to 'product_octopus_green' with a brushstroke SVG sweep overlay.",
+    "Apply Hanji paper texture visually: Use the cream background color and perhaps a very subtle SVG noise overlay if possible.",
+    "Remember to include `data-testid` attributes on forms and buttons.",
+    "Ensure global navigation exists to switch between Landing and Drops.",
+    "Use JS (not TSX) files for all React components."
+  ]
+}
