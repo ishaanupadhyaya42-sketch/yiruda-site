@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/yiruda-site/static/css/main.e185f9e8.css",
+    "main.js": "/yiruda-site/static/js/main.7f2acc3e.js",
+    "static/media/ginkgo-leaf-bronze.png": "/yiruda-site/static/media/ginkgo-leaf-bronze.3d1b5522a6f42c4b35f2.png",
+    "static/media/ginkgo-leaf-olive.png": "/yiruda-site/static/media/ginkgo-leaf-olive.84818f41067b5faf75ec.png",
+    "static/media/ginkgo-leaf-amber.png": "/yiruda-site/static/media/ginkgo-leaf-amber.873a262cf9107a0c8430.png",
+    "static/media/ginkgo-leaf-gold.png": "/yiruda-site/static/media/ginkgo-leaf-gold.6163578f34f1f9b40ff2.png",
+    "static/media/ginkgo-leaf-pale.png": "/yiruda-site/static/media/ginkgo-leaf-pale.e43f390c736e049fcbe0.png",
+    "index.html": "/yiruda-site/index.html",
+    "main.e185f9e8.css.map": "/yiruda-site/static/css/main.e185f9e8.css.map",
+    "main.7f2acc3e.js.map": "/yiruda-site/static/js/main.7f2acc3e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e185f9e8.css",
+    "static/js/main.7f2acc3e.js"
+  ]
+}
