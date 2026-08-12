@@ -11,7 +11,7 @@ import { CartProvider } from "./context/CartContext";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <CartProvider>
           <CursorTrail />
           <Nav />
